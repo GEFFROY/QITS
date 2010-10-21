@@ -1,0 +1,43 @@
+README
+-----------------------------------------------------
+
+1. What is QITS ?
+2. Installation
+3. Execution
+4. Update indexes
+
+
+I. What is QITS ?
+-----------------------------------------------------
+QITS is acronym of Quercus Implementation Testing System.
+It's a little PHP script for testing existence of PHP classes, methods, functions and constants.
+It can be used to create a "score" of implementation during Quercus development.
+
+Quercus is Caucho Technology's fast, open-source, 100% Java implementation of the PHP language.
+
+
+II. Installation
+-----------------------------------------------------
+Just create a new application on your Java Application Server and put content of QITS.
+Don't forget to copy libraries of Quercus.
+
+
+III. Execution
+-----------------------------------------------------
+Just go on http://url:port/QITS/
+The index file will load all informations via JS/Ajax scripts.
+
+
+IV. Update indexes
+-----------------------------------------------------
+Indexes are in datas/ folder.
+*.list are complete lists, extracted from php.net
+*.ignore are lists of ignored items in the implementation tests (ex: Win32 functions)
+
+To update indexes, just put new items in the right file :
+constants.* : lists of PHP Constants
+functions.* : lists of PHP Functions
+classes.* : lists of PHP Classes
+methods.* : lists of PHP Methods
+
+If you find a bug, you can open an issue on GitHub : http://github.com/Kdecherf/QITS/issues
